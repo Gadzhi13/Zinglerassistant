@@ -7,6 +7,7 @@ services:
       TZ: Europe/Berlin
     volumes:
       - /etc/homeassistant/config:/config
+      - /home/gadzhi/motion:/motion
     network_mode: "host"
     image: ghcr.io/home-assistant/home-assistant:stable
     deploy:
